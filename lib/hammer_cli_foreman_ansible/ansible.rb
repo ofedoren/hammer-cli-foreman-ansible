@@ -16,6 +16,12 @@ module HammerCLIForemanAnsible
       'hammer_cli_foreman_ansible/ansible_variables'
     )
 
+    lazy_subcommand(
+      'inventories',
+      _('Ansible inventories'),
+      'HammerCLIForemanAnsible::AnsibleInventoriesCommand',
+      'hammer_cli_foreman_ansible/ansible_inventories'
+    )
     autoload_subcommands
   end
 end
